@@ -1,0 +1,246 @@
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="scripts/app.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.fivechefs.org.au/fonts/starlight-fonts.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/app.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/2dcca62b0f.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+ <!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65869683-12"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-65869683-12');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1611043482485907');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1611043482485907&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Google Analytics Content Experiment code -->
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='163630379-0',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+<!-- End of Google Analytics Content Experiment code -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="What Would You Do?"> 
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.whatwouldyoudo.com.au/" />
+<meta property="og:description" content="Families with a sick child face tough choices this Christmas. Walk in their shoes and see."> 
+<meta property="og:image" content="http://www.whatwouldyoudo.com.au/assets/addy-og.jpg">
+<meta http-equiv="Cache-Control" content="public" />
+
+
+</head>
+
+<body>
+
+
+ 	<!-- For a full explanation of this code, please refer to the blogpost at http://www.bram.us/2014/01/05/css-animated-content-switching -->
+ 	<nav class="navbar navbar-fixed-top">
+ 	  <div class="container-fluid">
+ 	    <div class="navbar-header">
+ 	      <!--<a class="navbar-brand" href="#"><img src="assets/starlight-logo.gif"></a>-->
+        <div class="links">
+ 	        <button class="btn navbar-btn cta"><a href="http://donate.starlight.org.au/what-would-you-do" target="_blank" onMouseDown="PassParameters(this)"> Help Now </a></button>
+         <a href="#End-Panel" id="skip"> Skip > </a>
+        </div>
+      </div>
+ 	  </div>
+ 	</nav>
+
+	<div class="swap" id="mySwap">
+
+		
+		<div class="panelWrapper" id="panelWrapper2" data-enter="fade" data-exit="slideleft" >
+  			<div class="panel current" id="Start-Panel">
+  					<div class="panel-content">
+                    <div class="heropanel__content">
+                  
+  				           <h1>What Would You Do?</h1>
+  				           <p>This Christmas thousands of families with a seriously ill child will be faced with heartbreaking decisions.<br/>
+                      At a time usually associated with joy, it can be tough to smile. We're inspired by these families' strength and courage.<br/>
+                      So for a moment, imagine it was your child and your family. Walk in their shoes and see, what would you do?</p>
+  				            <div class="enter-name">
+                        <p> Start by entering your name: </p>
+                        <input type="text" class="full-input required" id="myName" name="myName">
+                      </div>
+                      <div class="start-journey">
+                        <a href="#Question-1" id="start" class="button move cta" onclick="populate(); Gtag_Event('engagement', this)">Start the Experience </a>
+                      </div>
+                    </div>
+                  </div>
+                   <!--<div class="share-footer">
+                    <div style="text-align:center;">
+                      <p>Share the experience: 
+                        <a class="sbg-button" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2Fxxx" onClick="onShareClick('WWYD facebook')">
+                        <img src="assets/facebook.original.png" width="42" height="42" >
+                        </a>
+      
+                        <a class="sbg-button"  data-sbg-network="twitter"  data-sbg-text="Thousands of families are faced with tough choices this Christmas. What would you do? Take the experience.
+                        http://bit.ly/xxx"  data-sbg-via=""  data-sbg-hashtags=""  data-sbg-width="500"  data-sbg-height="350" onMouseDown="onShareClick('WWYD twitter')">
+                        <img src="assets/twitter.original.png" width="42" height="42" >
+                        </a>
+      
+      
+                        <a class="sbg-button"  data-sbg-network="email"  data-sbg-subject="What Would You Do? Take the Experience"  data-sbg-body="Thousands of families are faced with tough choices this Christmas. What would you do? Take the experience. http://bit.ly/XXX" onClick="onShareClick('WWYD email')">
+                        <img src="assets/envelope.original.png" width="42" height="42">
+                        </a>
+                      </p>
+                    
+                  </div>
+                </div>-->  
+              </div>
+  			<!--<div class="panel" id="My-Details">
+  				<div class="panel-content">
+  					
+  				</div>
+  				
+  			</div>-->
+
+ 			<div class="panel" id="Question-1">
+ 				<div class="panel-content">
+          <div class="heropanel__content">
+          <div class="the-words">
+ 					  <h3><span class="personal-name uppercase comma-space">y</span>our child has been in hospital for months. The only thing keeping them going through treatment is knowing they're coming home for Christmas. You've just been told they're too sick to come home.</h3>
+          </div>
+
+          <div class="still-container">
+            <h2>What do you do?</h2>
+ 				 	   <a href="#Question-2" class="button move" onclick="Gtag_Event('engagement', this)">Tell your child now</a>
+ 				 	   <a href="#Question-2" class="button move"  onclick="Gtag_Event('engagement', this)">Wait & tell them on Christmas Eve</a>
+           </div>
+          </div>
+ 				 </div>
+  			</div>
+  			<div class="panel" id="Question-2">
+  				<div class="panel-content">
+            <div class="heropanel__content">
+              <div class="the-words">
+  					   <h3>Your child wants you to stay by their hospital bed on Christmas Eve but your other kids want you to wake up at home on Christmas morning. You want nothing more than for your family to be together at Christmas.</h3>
+              </div>
+              <div class="still-container">
+                  <h2>What would you do?</h2>
+  					       <a href="#Question-3" class="button move" onclick="Gtag_Event('engagement', this)">Sleep at home</a>
+  					       <a href="#Question-3" class="button move" onclick="Gtag_Event('engagement', this)">Sleep at the hospital</a>
+              </div> 
+  				  </div>
+          </div>
+  			</div>
+  			<div class="panel" id="Question-3">
+  				<div class="panel-content">
+             <div class="heropanel__content">
+                <div class="the-words">
+  					     <h3><span class="personal-name uppercase comma-space">y</span>our child is too sick to come home from hospital on Christmas Day. Your other kids find seeing their sibling in hospital distressing. You don't want anyone upset at Christmas, but you want your family together.</h3>
+                </div>
+              <div class="still-container">
+                <h2>What would you do?</h2>
+  					     <a href="#End-Panel" class="button move" onclick="Gtag_Event('engagement', this)">Take the family to hospital</a>
+  					     <a href="#End-Panel" class="button move" onclick="Gtag_Event('engagement', this)">Go to hospital on your own</span></a>
+              </div>
+            </div>
+  				</div>
+  			</div>
+
+        <!--<div class="panel" id="Question-4">
+          <div class="panel-content">
+            <div class="the-words">
+              <h3>It's been a long year. Juggling hospital and home life has torn your family in two. Your kids can't wait for their annual family holiday, but days before you're to leave, your child is re-admitted to hospital.  </h3>
+            </div>
+             <div class="still-container">
+              <h2> What would you do? </h2>
+
+            <a href="#End-Panel" class="button move" onclick="Gtag_Event('engagement', this)">One parent goes & one parent stays</a>
+            <a href="#End-Panel" class="button move" onclick="Gtag_Event('engagement', this)">Postpone the holiday</span></a>
+             </div>
+          </div>
+        </div>-->
+
+         <!--<div class="panel" id="Question-5">
+          <div class="panel-content">
+            <div class="the-words">
+              <h3>You've planned a special Christmas family holiday - the first in years. You all need some time away together after the gruelling year in hospital. But days before you're due to leave, your child is readmitted to hospital. </h3>
+              <h3 class="question"> What would you do? </h3>
+            </div>
+            <a href="#End-Panel" class="button move" onclick="Gtag_Event('engagement', this)">Cancel the holiday</a>
+            <a href="#End-Panel" class="button move" onclick="Gtag_Event('engagement', this)">One parent goes</span></a>
+          </div>
+        </div>-->
+
+  			<div class="panel" id="End-Panel">
+  				<div class="panel-content">
+              <div class="heropanel__content">
+              
+                      <div class="the-words">
+  					            <p><span class="personal-name uppercase comma-space">t</span>hese difficult decisions were based on stories shared with us from real Starlight families. There are no right or wrong answers, just compromise, sacrifice and getting through one day at a time. <br/>
+                          How do they find joy and happiness when so much has been taken away? How do they keep their children's hopes and dreams alive at Christmas? </p>
+                          <h2 class="good-news">The good news is, it's possible!</h2>
+                        <div class ="question">
+                          <h1 class="callout">With You<span class="personal-name last-word">.</span></h1>
+                          <h3>And Starlight.</h3> 
+                          <div class="start-journey">
+                            <a href="http://donate.starlight.org.au/what-would-you-do" class="button final cta" onMouseDown="PassParameters(this)">Help Now </a>
+                          </div>
+                          <div class="share-bar">
+                            <p>Share the experience: </p> 
+                            <a class="sbg-button" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2F2hCM2Hf" onClick="onShareClick('WWYD facebook')">
+                              <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                                  
+                            <a class="sbg-button"  data-sbg-network="twitter" href="https://twitter.com/home?status=Thousands%20of%20families%20are%20faced%20with%20tough%20choices%20this%20Christmas.%20What%20would%20you%20do?%20Take%20the%20experience.%20http%3A//bit.ly/2mvbEr7" data-sbg-via=""  data-sbg-hashtags=""  data-sbg-width="500"  data-sbg-height="350" onClick="onShareClick('WWYD twitter')">
+                             <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                                  
+                                  
+                            <a class="sbg-button"  data-sbg-network="email"   href="mailto:?&subject=What Would You Do? Take the Experience&body=Thousands%20of%20families%20are%20faced%20with%20tough%20choices%20this%20Christmas.%20What%20would%20you%20do?%20Take%20the%20experience.%20http%3A//bit.ly/2A2ZpYP">
+                             <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            </div>
+                          <!--<a href="#Start-Panel" class="move"><i class="fa fa-refresh" aria-hidden="true"></i> Return to beginning</a>-->
+                        </div>
+
+  					
+
+  				</div>
+  			</div>
+		</div>
+
+
+	
+
+	</div>
+ </body>
+
+
+ </html>
