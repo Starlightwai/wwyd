@@ -38,7 +38,20 @@
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
-
+<!-- Google Analytics Content Experiment code -->
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='163630379-0',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+<!-- End of Google Analytics Content Experiment code -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:title" content="What Would You Do?"> 
@@ -76,18 +89,16 @@
                     <div class="heropanel__content">
                   
   				           <h1>What Would You Do?</h1>
-                      <p>This Christmas, thousands of families with a seriously ill child will be faced with heartbreaking decisions. Imagine it was your child, what would you do?</p>
-                      <div class="enter-name">
-                        <p> Enter your name: </p>
+  				           <p>This Christmas thousands of families with a seriously ill child will be faced with heartbreaking decisions.<br/>
+                      At a time usually associated with joy, it can be tough to smile. We're inspired by these families' strength and courage.<br/>
+                      So for a moment, imagine it was your child and your family. Walk in their shoes and see, what would you do?</p>
+  				            <div class="enter-name">
+                        <p> Start by entering your name: </p>
                         <input type="text" class="full-input required" id="myName" name="myName">
                       </div>
-                     
-  				          
-
-                       <div class="start-journey">
+                      <div class="start-journey">
                         <a href="#Question-1" id="start" class="button move cta" onclick="populate(); Gtag_Event('engagement', this)">Start the Experience </a>
                       </div>
-  				           
                     </div>
                   </div>
                    <!--<div class="share-footer">
