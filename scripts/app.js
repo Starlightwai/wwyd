@@ -184,6 +184,13 @@ function Gtag_Event(myType, el) {
 };
 
 
+function LP_Action_FB() {
+	console.log('FB button')
+	fbq('trackCustom', '#Question-1');
+}
+
+
+
   // Parse the URL
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
